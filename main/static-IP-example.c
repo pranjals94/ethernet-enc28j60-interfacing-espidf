@@ -68,6 +68,7 @@ static void example_set_static_ip(esp_netif_t *netif)
     ip.ip.addr = 419539136;//IP address 1.1.254.169 is equal to 16907945, IP address 25.1.168.192 is equal to 419539136
     ip.netmask.addr = 65535;//IP address 0.0.255.255 is equal to 65535
 //  ip.gw.addr = 2851995929;//IP address 169.254.1.25 is equal to 2851995929
+// ip.gw.addr = ipaddr_addr("192.168.1.1"); // use ipaddr_addr function in #include <netdb.h> header file to convert the ip address
     if (esp_netif_set_ip_info(netif, &ip) != ESP_OK) {
         ESP_LOGE(TAG, "Failed to set ip info");
         return;
