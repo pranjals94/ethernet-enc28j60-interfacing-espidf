@@ -11,6 +11,8 @@
   for communication with the on-board flash memory and should not be used by the user.
   HSPI and VSPI are general-purpose SPI interfaces that can be used for external communication
    with other devices.
+many examples including static ip are available in the espIdf project examples
+   
 */
 #include <sys/param.h>
 #include <stdio.h>
